@@ -26,6 +26,8 @@ public class AddNewTasksStepDefinitions {
 
     @Given("^that (.*) has an empty todo list$")
     public void that_actor_has_an_empty_todo_list(String actorName) throws Exception {
+//        ChromeOptions options = new ChromeOptions();
+//        options.setBinary("C:\\\\Users\\\\mcmz\\\\chrlauncher-win64-stable-codecs-sync\\\\bin\\\\chrome.exe");
         OnStage.theActorCalled(actorName).attemptsTo(Start.withAnEmptyList());
     }
 
